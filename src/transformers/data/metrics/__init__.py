@@ -58,6 +58,8 @@ if _has_sklearn:
             return {"acc": simple_accuracy(preds, labels)}
         elif task_name == "sst-3":
             return {"acc": simple_accuracy(preds, labels)}
+        elif task_name == "nlp-class":
+            return {"acc": simple_accuracy(preds, labels)}
         elif task_name == "mrpc":
             return acc_and_f1(preds, labels)
         elif task_name == "sts-b":
