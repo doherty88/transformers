@@ -27,6 +27,7 @@ from .modeling_roberta import (
     RobertaForSequenceClassification,
     RobertaForTokenClassification,
     RobertaModel,
+    RobertaForGFNSentiment
 )
 
 
@@ -98,6 +99,9 @@ class XLMRobertaForSequenceClassification(RobertaForSequenceClassification):
     superclass for the appropriate documentation alongside usage examples.
     """
 
+    config_class = XLMRobertaConfig
+
+class XLMRobertaForGFNSentiment(RobertaForGFNSentiment):
     config_class = XLMRobertaConfig
 
 
