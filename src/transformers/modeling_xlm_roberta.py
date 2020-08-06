@@ -27,7 +27,7 @@ from .modeling_roberta import (
     RobertaForSequenceClassification,
     RobertaForTokenClassification,
     RobertaModel,
-    RobertaForGFNSentiment
+    RobertaForGFNSentimentSequenceClassification
 )
 
 
