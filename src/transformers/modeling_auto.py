@@ -153,7 +153,7 @@ from .modeling_xlm_roberta import (
     XLMRobertaForMultipleChoice,
     XLMRobertaForQuestionAnswering,
     XLMRobertaForSequenceClassification,
-    XLMRobertaForGFNSentiment,
+    XLMRobertaForGFNSentimentSequenceClassification,
     XLMRobertaForTokenClassification,
     XLMRobertaModel,
 )
@@ -293,7 +293,7 @@ MODEL_FOR_SEQUENCE_CLASSIFICATION_MAPPING = OrderedDict(
         (AlbertConfig, AlbertForSequenceClassification),
         (CamembertConfig, CamembertForSequenceClassification),
         # (XLMRobertaConfig, XLMRobertaForSequenceClassification),
-        (XLMRobertaConfig, XLMRobertaForGFNSentiment),
+        (XLMRobertaConfig, XLMRobertaForGFNSentimentSequenceClassification),
         (BartConfig, BartForSequenceClassification),
         (LongformerConfig, LongformerForSequenceClassification),
         (RobertaConfig, RobertaForSequenceClassification),

@@ -365,7 +365,7 @@ class RobertaForSequenceClassification(BertPreTrainedModel):
         )
 
 
-class RobertaForGFNSentiment(BertPreTrainedModel):
+class RobertaForGFNSentimentSequenceClassification(BertPreTrainedModel):
     config_class = RobertaConfig
     base_model_prefix = "roberta"
 

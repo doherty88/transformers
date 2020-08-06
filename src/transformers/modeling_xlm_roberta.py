@@ -101,7 +101,7 @@ class XLMRobertaForSequenceClassification(RobertaForSequenceClassification):
 
     config_class = XLMRobertaConfig
 
-class XLMRobertaForGFNSentiment(RobertaForGFNSentiment):
+class XLMRobertaForGFNSentimentSequenceClassification(RobertaForGFNSentimentSequenceClassification):
     config_class = XLMRobertaConfig
 
 
