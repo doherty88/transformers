@@ -424,7 +424,7 @@ class RobertaForGFNSentimentSequenceClassification(BertPreTrainedModel):
         loss = None
         if labels is not None:
             device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-            weight_cls = torch.tensor([1.0, 1.3, 1.2]).to(device)
+            weight_cls = torch.tensor([1.0, 1.3, 1.5]).to(device)
             loss_fct = CrossEntropyLoss(weight=weight_cls)
             loss = loss_fct(logits.view(-1, self.num_labels), labels.view(-1))
 
